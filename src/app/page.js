@@ -653,8 +653,10 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <div className={styles.score}>Score: {score}</div>
-        <div className={styles.stage}>Stage: {stage}</div>
+        <div className={"text-5xl text-white text-center"}>appXweb</div>
+
+        <div className={"text-2xl text-white text-center"}>Score: {score}</div>
+        <div className={"text-xl text-white text-center"}>Stage: {stage}</div>
       </div>
 
       <div
@@ -700,7 +702,7 @@ export default function Home() {
 
         {/* Start screen */}
         {!gameStarted && !gameOver && (
-          <div className={styles.startScreen}>
+          <div className={"text-center"}>
             <h1>Airplane Adventure</h1>
             <p>Press ENTER or SPACE to start</p>
             <p>Use UP and DOWN arrows to control the plane</p>
